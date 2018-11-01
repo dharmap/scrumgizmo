@@ -10,26 +10,29 @@
     <title>Scrum Gizmo - Login</title>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
     <link href="/libs/floating-labels.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
 </head>
 
 <body>
+<header></header>
+<main role="main" class="container">
 <form class="form-signin">
     <div class="text-center mb-4">
-        <img class="mb-4" src="../../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-        <h1 class="h3 mb-3 font-weight-normal">Login</h1>
-        <p>Welcome to Scrum Gizmo</p>
+        <i class="fas fa-user-ninja fa-5x" style="padding-bottom:9px; color:#FFCF40;"></i>
+        <h1 class="h3 mb-3 font-weight-normal">Log into Scrum Ninja</h1>
     </div>
 
     <div class="form-label-group">
         <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-        <label for="inputEmail">Email address</label>
+        <label for="inputEmail">Email</label>
     </div>
 
     <div class="form-label-group">
@@ -43,7 +46,13 @@
         </label>
     </div>
     <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-    <p class="mt-5 mb-3 text-muted text-center">&copy; 2018</p>
+    <p class="mt-5 mb-3 text-muted text-center">Scrum Gizmo &copy; 2018</p>
 </form>
+</main>
+<footer class="footer">
+    <div class="container">
+        <span class="text-muted">Built with : <i class="fab fa-aws"></i> | <i class="fab fa-angular"></i> | <i class="fab fa-js-square"></i> | <i class="fab fa-html"></i></span>
+    </div>
+</footer>
 </body>
 </html>
